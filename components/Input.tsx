@@ -13,7 +13,7 @@ export function Input({
   type,
   placeholder,
   icon,
-  rest
+  ...rest
 }: InputProps) {
   return (
     <div className="flex w-3/5 font-medium bg-zinc-700 py-2.5 pl-2  mb-5">

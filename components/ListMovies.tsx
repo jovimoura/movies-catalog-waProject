@@ -1,9 +1,14 @@
 import { Movie, MovieProps } from './Movie'
 
-export function ListMovies({ movies }: any): any {
+interface ListMoviesProps {
+  movies: any
+  movieName?: string
+}
+
+export function ListMovies({ movies, movieName }: ListMoviesProps): any {
   return (
-    <div className="">
-      <ul className="overflow-visible">
+    <div>
+      <ul>
         {movies.map((item: MovieProps, i: number) => {
           return (
             <li className="flex justify-center" key={i}>

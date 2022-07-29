@@ -26,7 +26,7 @@ export default async (
         res.status(200).json(newArr)
       } catch (err) {
         console.log('error', err)
-        res.status(500).json({ error: err })
+        res.status(400).json({ error: err })
       }
       break
     default:
