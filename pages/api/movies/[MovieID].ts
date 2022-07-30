@@ -9,7 +9,7 @@ export default async (
   switch (method) {
     case 'GET':
       try {
-        const api = 'https://ghibliapi.herokuapp.com/films'
+        const api = `${process.env.DB_URL}/films/?limit=50`
         const data = await fetch(`${api}`)
         const movies = await data.json()
         const newArr: any = []
@@ -45,6 +45,9 @@ export default async (
           case '5':
             filterArr = newArr.slice(39, 49)
             res.status(200).json(filterArr)
+            break
+          case 'all':
+            res.status(200).json(newArr)
             break
           default:
             break

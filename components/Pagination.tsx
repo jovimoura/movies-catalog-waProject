@@ -22,6 +22,14 @@ export function Pagination({ fnc }: PaginationProps) {
             </li>
           )
         })}
+        <li
+          className="border-2 border-zinc-400 px-6 py-3 hover:bg-zinc-400 hover:text-black transition-colors active:bg-zinc-50"
+          onClick={() => {
+            fnc('all')
+          }}
+        >
+          all
+        </li>
       </ul>
     </div>
   )
