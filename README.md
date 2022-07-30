@@ -15,7 +15,7 @@ https://movies-catalog-wa-project.vercel.app/
 ### Clone o repositório
 
 ```
-git clone
+git clone https://github.com/jovimoura/movies-catalog-waProject
 ```
 
 ### Acesse o diretorio
