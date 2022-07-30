@@ -16,9 +16,10 @@ const Home: NextPage = () => {
     const getMovies = async (page: number): Promise<void> => {
       const url =
         process.env.NODE_ENV === 'production'
-          ? 'https://movies-catalog-wa-project.vercel.app/'
-          : 'http://localhost:3000/'
-      const api = `${url}movies/${page}`
+          ? 'https://movies-catalog-wa-project.vercel.app/api'
+          : 'http://localhost:3000/api'
+      console.log('url', url)
+      const api = `${url}/movies/${page}`
       console.log('aoi', api)
       const res = await fetch(`${api}`)
       const data = await res.json()
