@@ -7,7 +7,7 @@
 ## URL da aplicação
 
 ```
-
+https://movies-catalog-wa-project.vercel.app/
 ```
 
 ## Instação

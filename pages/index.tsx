@@ -14,7 +14,11 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     const getMovies = async (page: number): Promise<void> => {
-      const api = `http://localhost:3000/api/movies/${page}`
+      const url =
+        process.env.NODE_ENV === 'production'
+          ? 'https://movies-catalog-wa-project.vercel.app/'
+          : 'http://localhost:3000/'
+      const api = `${url}movies/${page}`
       console.log('aoi', api)
       const res = await fetch(`${api}`)
       const data = await res.json()
