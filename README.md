@@ -42,12 +42,6 @@ npm run dev
 http://localhost:3000/
 ```
 
-### or
-
-```
-http://localhost:5173/
-```
-
 ## API:
 
 A API recebe um id, se o id for 1, ele entrega os 10 primeiros itens do array e assim em diante
