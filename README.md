@@ -10,7 +10,7 @@
 https://movies-catalog-wa-project.vercel.app/
 ```
 
-## Instação
+## Instalação
 
 ### Clone o repositório
 
